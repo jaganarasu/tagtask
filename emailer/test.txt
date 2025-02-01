@@ -1,0 +1,246 @@
+<html>
+<head>
+    <title>Tag Email News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .container {
+            width: 600px;
+            margin: 0 auto;
+        }
+        .header, .footer {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header img, .footer img {
+            height: 30px;
+        }
+        .nav a {
+            margin: 0 10px;
+            color: #888;
+            text-decoration: none;
+        }
+        .welcome-section {
+            text-align: center;
+            padding: 40px 0;
+        }
+        .welcome-section img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .divider {
+            border-top: 1px solid #e0e0e0;
+            margin: 40px 0;
+        }
+        .highlight-section {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 10px;
+        }
+        .highlight-section .cta-button {
+            background-color: #fff;
+            color: #1a1a1a;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content-section {
+            padding: 20px 0;
+        }
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-item {
+            flex: 1 1 calc(50% - 20px);
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .product-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .product-item .cta-button {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .list-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .list-item i {
+            font-size: 24px;
+            color: #1a1a1a;
+            margin-right: 10px;
+        }
+        .footer .social-icons a {
+            margin: 0 10px;
+            color: #888;
+            text-decoration: none;
+        }
+        @media (max-width: 400px) {
+            .container {
+                width: 100%;
+            }
+            .product-grid {
+                flex-direction: column;
+            }
+            .product-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table class="container" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td class="header">
+                <img src="https://storage.googleapis.com/a1aa/image/UPDTzzi8XebbEQH_XPHvtFcqUCLfI2S1hIqwoApiqIs.jpg" alt="Tag logo">
+                <table class="nav" align="right">
+                    <tr>
+                        <td><a href="#">Company</a></td>
+                        <td><a href="#">Blog</a></td>
+                        <td><a href="#">About</a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="welcome-section">
+                <img src="https://storage.googleapis.com/a1aa/image/WKLV8iz4rL81Xe6yCu5ZCS-fJrJwuhvo1zBuAGHpD84.jpg" alt="Profile picture of Mia">
+                <h1>Hi Mia,</h1>
+                <p>Welcome to the Tag email news.</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="divider"></td>
+        </tr>
+        <tr>
+            <td class="highlight-section">
+                <h2>CAPTION</h2>
+                <h3>Lorem Ipsum Dolor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                <a class="cta-button" href="#">Read More</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="divider"></td>
+        </tr>
+        <tr>
+            <td class="content-section">
+                <h3>Lorem Ipsum Dolor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <table class="product-grid" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="product-item">
+                            <img src="https://storage.googleapis.com/a1aa/image/9bq7DR2OBiaHe8x5r9g2j77IgIgPI-OsYPU5cgZ1PhA.jpg" alt="Product image">
+                            <h4>Lorem Ipsum</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="price">$199.99</div>
+                            <a class="cta-button" href="#">CTA Button</a>
+                        </td>
+                        <td class="product-item">
+                            <img src="https://storage.googleapis.com/a1aa/image/9bq7DR2OBiaHe8x5r9g2j77IgIgPI-OsYPU5cgZ1PhA.jpg" alt="Product image">
+                            <h4>Lorem Ipsum</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="price">$199.99</div>
+                            <a class="cta-button" href="#">CTA Button</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="divider"></td>
+        </tr>
+        <tr>
+            <td class="content-section">
+                <h3>CAPTION</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <table class="product-grid" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="product-item">
+                            <img src="https://storage.googleapis.com/a1aa/image/9bq7DR2OBiaHe8x5r9g2j77IgIgPI-OsYPU5cgZ1PhA.jpg" alt="Product image">
+                        </td>
+                        <td class="product-item">
+                            <img src="https://storage.googleapis.com/a1aa/image/9bq7DR2OBiaHe8x5r9g2j77IgIgPI-OsYPU5cgZ1PhA.jpg" alt="Product image">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="product-item">
+                            <img src="https://storage.googleapis.com/a1aa/image/9bq7DR2OBiaHe8x5r9g2j77IgIgPI-OsYPU5cgZ1PhA.jpg" alt="Product image">
+                        </td>
+                        <td class="product-item">
+                            <img src="https://storage.googleapis.com/a1aa/image/9bq7DR2OBiaHe8x5r9g2j77IgIgPI-OsYPU5cgZ1PhA.jpg" alt="Product image">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="divider"></td>
+        </tr>
+        <tr>
+            <td class="content-section">
+                <h3>Lorem Ipsum Dolor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <table align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="list-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Lorem Ipsum</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="list-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Lorem Ipsum</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer">
+                <img src="https://storage.googleapis.com/a1aa/image/UPDTzzi8XebbEQH_XPHvtFcqUCLfI2S1hIqwoApiqIs.jpg" alt="Tag logo">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="contact-info">
+                    <p>Learn easy and fast</p>
+                    <p>mail@Tag.com +123456789</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
