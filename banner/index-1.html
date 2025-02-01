@@ -1,0 +1,198 @@
+<html>
+<head>
+    <title>Tag</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        .header {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header img {
+            height: 40px;
+        }
+        .content {
+            display: flex;
+            padding: 20px;
+        }
+        .text-content {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .text-content h1 {
+            font-size: 48px;
+            color: #F7931E;
+            margin: 0;
+        }
+        .text-content h2 {
+            font-size: 36px;
+            color: #333;
+            margin: 0;
+        }
+        .text-content p {
+            font-size: 14px;
+            color: #666;
+        }
+        .text-content .social-icons {
+            margin-top: 20px;
+        }
+        .text-content .social-icons i {
+            font-size: 20px;
+            color: #333;
+            margin-right: 10px;
+        }
+        .image-content {
+            flex: 1;
+            position: relative;
+        }
+        .image-content img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .image-content .small-image {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #F7931E;
+        }
+        .footer {
+            background-color: #F7931E;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer .join-now {
+            background-color: #fff;
+            color: #F7931E;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer .contact-info {
+            color: #fff;
+            font-size: 18px;
+        }
+        .footer .contact-info i {
+            margin-left: 10px;
+        }
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+            .text-content {
+                padding-right: 0;
+                text-align: center;
+            }
+            .image-content {
+                margin-top: 20px;
+            }
+            .footer {
+                flex-direction: column;
+                text-align: center;
+            }
+            .footer .join-now {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img id="logo" alt="Tag logo" src="https://storage.googleapis.com/a1aa/image/JSQsT75p6mwLlyyEMk8ZVsfaugdYg2IwGajmch1G1-A.jpg"/>
+        </div>
+        <div class="content">
+            <div class="text-content">
+                <h1 class="text-element">LOREM</h1>
+                <h2 class="text-element">IPSUM</h2>
+                <p class="text-element">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR</p>
+                <div class="social-icons text-element">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest"></i>
+                </div>
+            </div>
+            <div class="image-content">
+                <img id="main-image" alt="Main image of a globe with flowers" src="https://storage.googleapis.com/a1aa/image/Ac14HGlqRGeDMRLi3CWbzfPznHDHtVM1IxwLFv99nIo.jpg"/>
+                <div class="small-image">
+                    <img id="second-image" alt="Small image of a black globe with lights in the background" src="https://storage.googleapis.com/a1aa/image/RggH1HKy0B-Pts9fFAYPt3DNV3jU1-zC3yXbgjdKZFQ.jpg"/>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <a class="join-now" href="#">JOIN NOW</a>
+            <div class="contact-info">
+                FOR DELIVERY 012-3456-789
+                <i class="fas fa-phone"></i>
+            </div>
+        </div>
+    </div>
+    <script>
+        function animate() {
+            // Frame 1 Animations
+            gsap.from("#logo", {duration: 1, x: -100, opacity: 0});
+            gsap.from("#main-image", {duration: 1, x: 100, opacity: 0, delay: 0.5});
+            gsap.from(".text-element", {
+                duration: 1,
+                x: -100,
+                opacity: 0,
+                stagger: 0.2,
+                delay: 1
+            });
+
+            // Frame 2 Animations
+            gsap.to(["#main-image", ".text-content"], {
+                duration: 1,
+                y: -50,
+                delay: 3
+            });
+
+            // Frame 3 Animations
+            gsap.from("#second-image", {
+                duration: 1,
+                opacity: 0,
+                delay: 4
+            });
+            gsap.from(".footer .join-now", {
+                duration: 1,
+                opacity: 0,
+                delay: 5
+            });
+            gsap.from(".footer .contact-info", {
+                duration: 1,
+                opacity: 0,
+                delay: 5.5,
+                onComplete: function() {
+                    // Restart the animation after a delay
+                    gsap.delayedCall(2, animate);
+                }
+            });
+        }
+
+        // Start the animation
+        animate();
+    </script>
+</body>
+</html>
