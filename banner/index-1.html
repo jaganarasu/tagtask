@@ -2,21 +2,32 @@
 <head>
     <title>Tag</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <style>
-        body {
+
+body, html {
             margin: 0;
-            font-family: 'Roboto', sans-serif;
-            background-color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            border-radius: 10px;
+            padding: 0;
             overflow: hidden;
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffffff;
+        }
+        
+        .container {
+            width: 300px;
+            height: 250px;
             position: relative;
+            overflow: hidden;
+          
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #F7931E;
+            background-image:url('./Background-1.png');
+   
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         .header {
             padding: 20px;
@@ -25,7 +36,8 @@
             align-items: center;
         }
         .header img {
-            height: 40px;
+            height: 20px;
+           
         }
         .content {
             display: flex;
@@ -36,115 +48,112 @@
             padding-right: 20px;
         }
         .text-content h1 {
-            font-size: 48px;
+            font-size: 18px;
             color: #F7931E;
             margin: 0;
+            font-family: "Bebas Neue", serif;
         }
         .text-content h2 {
-            font-size: 36px;
+            font-size: 16px;
             color: #333;
-            margin: 0;
+            margin: 0;font-family: "Bebas Neue", serif;
         }
         .text-content p {
-            font-size: 14px;
+            font-size: 8px;
             color: #666;
         }
         .text-content .social-icons {
-            margin-top: 20px;
+            margin-top: 4px;
         }
         .text-content .social-icons i {
-            font-size: 20px;
+            font-size: 10px;
             color: #333;
-            margin-right: 10px;
+            margin-right: 5px;
         }
         .image-content {
             flex: 1;
             position: relative;
         }
         .image-content img {
-            width: 100%;
-            border-radius: 10px;
+            margin-top: -170px;
+            
+            margin-left: -8px;
+            width: 300px;
+            height: 307px;
+            
+          
+             
         }
         .image-content .small-image {
             position: absolute;
+            width: 80px;
+            height: 80px;
             bottom: 20px;
-            left: 20px;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
             overflow: hidden;
-            border: 5px solid #F7931E;
+            border-radius: 50%;
+           
+       
+            
         }
         .footer {
-            background-color: #F7931E;
-            padding: 20px;
+            margin-top: -40px; 
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
         .footer .join-now {
-            background-color: #fff;
-            color: #F7931E;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
+            font-size: 8px;
+            color: #ffffff;
+          
             font-weight: bold;
+        }
+        .footer .join-now .btn{
+            font-size: 8px;
+
         }
         .footer .contact-info {
             color: #fff;
-            font-size: 18px;
+            font-size: 8px;
         }
         .footer .contact-info i {
             margin-left: 10px;
         }
-        @media (max-width: 768px) {
-            .content {
-                flex-direction: column;
-            }
-            .text-content {
-                padding-right: 0;
-                text-align: center;
-            }
-            .image-content {
-                margin-top: 20px;
-            }
-            .footer {
-                flex-direction: column;
-                text-align: center;
-            }
-            .footer .join-now {
-                margin-bottom: 10px;
-            }
-        }
+       
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <img id="logo" alt="Tag logo" src="https://storage.googleapis.com/a1aa/image/JSQsT75p6mwLlyyEMk8ZVsfaugdYg2IwGajmch1G1-A.jpg"/>
+            <img id="logo" alt="Tag logo" src="https://raw.githubusercontent.com/jaganarasu/tagtask/refs/heads/main/emailer/logo.png"/>
         </div>
         <div class="content">
             <div class="text-content">
                 <h1 class="text-element">LOREM</h1>
                 <h2 class="text-element">IPSUM</h2>
-                <p class="text-element">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR</p>
-                <div class="social-icons text-element">
+                <p class="text-element1">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR</p>
+                <div class="social-icons  ">
                     <i class="fab fa-facebook"></i>
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-pinterest"></i>
                 </div>
             </div>
             <div class="image-content">
-                <img id="main-image" alt="Main image of a globe with flowers" src="https://storage.googleapis.com/a1aa/image/Ac14HGlqRGeDMRLi3CWbzfPznHDHtVM1IxwLFv99nIo.jpg"/>
+                <img id="main-image" alt="Main image of a globe with flowers" src="banner-ima-1.png"/>
                 <div class="small-image">
-                    <img id="second-image" alt="Small image of a black globe with lights in the background" src="https://storage.googleapis.com/a1aa/image/RggH1HKy0B-Pts9fFAYPt3DNV3jU1-zC3yXbgjdKZFQ.jpg"/>
+                    <img id="second-image" alt="Small image of a black globe with lights in the background" src="ima-2.png"/>
                 </div>
             </div>
         </div>
         <div class="footer">
-            <a class="join-now" href="#">JOIN NOW</a>
+            <div class="join-now">
+                <p>JOIN NOW</p>
+                <a class="btn" href="#">JOIN NOW</a>
+            </div>
+           
             <div class="contact-info">
-                FOR DELIVERY 012-3456-789
+                <p>FOR DELIVERY </p>
+                <p>012-3456-789 </p>
+                
                 <i class="fas fa-phone"></i>
             </div>
         </div>
@@ -156,31 +165,42 @@
             gsap.from("#main-image", {duration: 1, x: 100, opacity: 0, delay: 0.5});
             gsap.from(".text-element", {
                 duration: 1,
-                x: -100,
+                x: -80,
                 opacity: 0,
                 stagger: 0.2,
                 delay: 1
             });
 
             // Frame 2 Animations
-            gsap.to(["#main-image", ".text-content"], {
+            gsap.to([ "#main-image",".text-content"], {
                 duration: 1,
-                y: -50,
+                y: -40,
                 delay: 3
             });
 
             // Frame 3 Animations
-            gsap.from("#second-image", {
+            
+            gsap.from("#second-image ", {
                 duration: 1,
                 opacity: 0,
                 delay: 4
             });
-            gsap.from(".footer .join-now", {
+            gsap.from(".text-element1", {
+                duration: 1,
+                opacity: 0,
+                delay: 4.5
+            });
+            gsap.from(".social-icons", {
+                duration: 1,
+                opacity: 0,
+                delay: 4.8
+            });
+            gsap.from(".footer .join-now ", {
                 duration: 1,
                 opacity: 0,
                 delay: 5
             });
-            gsap.from(".footer .contact-info", {
+            gsap.from(".footer  .contact-info", {
                 duration: 1,
                 opacity: 0,
                 delay: 5.5,
