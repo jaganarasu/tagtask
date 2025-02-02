@@ -182,36 +182,60 @@ body, html {
         </div>
     </div>
     <script>
-         function animate() {
-        let tl = gsap.timeline({ repeat: -1, repeatDelay: 2 }); 
+        function animate() {
+            // Frame 1 Animations
+            gsap.from("#logo", {duration: 1, x: -100, opacity: 0});
+            gsap.from("#main-image", {duration: 1, x: 100, opacity: 0, delay: 0.5});
+            gsap.from(".text-element", {
+                duration: 1,
+                x: -80,
+                opacity: 0,
+                stagger: 0.2,
+                delay: 1
+            });
 
-        // Frame 1 Animations
-        tl.from("#logo", { duration: 1, x: -100, opacity: 0 })
-        .from("#main-image", { duration: 1, x: 100, opacity: 0 }, "-=0.5")
-        .from(".text-element", {
-            duration: 1,
-            x: -80,
-            opacity: 0,
-            stagger: 0.2
-        }, "-=0.5");
+            // Frame 2 Animations
+            gsap.to([ "#main-image",".text-content"], {
+                duration: 1,
+                y: -40,
+                delay: 3
+            });
 
-        // Frame 2 Animations
-        tl.to(["#main-image", ".text-content"], {
-            duration: 1,
-            y: -40
-        }, "+=1");
+            // Frame 3 Animations
+            
+            gsap.from("#second-image ", {
+                duration: 1,
+                opacity: 0,
+                delay: 4
+            });
+            gsap.from(".text-element1", {
+                duration: 1,
+                opacity: 0,
+                delay: 4.5
+            });
+            gsap.from(".social-icons", {
+                duration: 1,
+                opacity: 0,
+                delay: 4.8
+            });
+            gsap.from(".footer .join-now ", {
+                duration: 1,
+                opacity: 0,
+                delay: 5
+            });
+            gsap.from(".footer  .contact-info", {
+                duration: 1,
+                opacity: 0,
+                delay: 5.5,
+                onComplete: function() {
+                    // Restart the animation after a delay
+                    gsap.delayedCall(2, animate);
+                }
+            });
+        }
 
-        // Frame 3 Animations
-        tl.from("#second-image", { duration: 1, opacity: 0 }, "+=0.5")
-        .from(".text-element1", { duration: 1, opacity: 0 }, "-=0.5")
-        .from(".social-icons", { duration: 1, opacity: 0 }, "-=0.3")
-        .from(".footer .join-now", { duration: 1, opacity: 0 }, "-=0.3")
-        .from(".footer .contact-info", { duration: 1, opacity: 0 }, "-=0.3");
-
-        
-    }
-    animate();
-
+        // Start the animation
+        animate();
     </script>
 </body>
 </html>
