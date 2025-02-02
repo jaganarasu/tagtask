@@ -24,7 +24,7 @@ body, html {
           
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             background-color: #F7931E;
-            background-image:url('./Background-1.png');
+            background-image:url('https://raw.githubusercontent.com/jaganarasu/tagtask/refs/heads/main/banner/background-1.png');
    
             background-repeat: no-repeat;
             background-size: cover;
@@ -59,7 +59,7 @@ body, html {
             margin: 0;font-family: "Bebas Neue", serif;
         }
         .text-content p {
-            font-size: 8px;
+            font-size: 6px;
             color: #666;
         }
         .text-content .social-icons {
@@ -68,40 +68,49 @@ body, html {
         .text-content .social-icons i {
             font-size: 10px;
             color: #333;
-            margin-right: 5px;
+            margin-right: 2px;
+        }
+        .text-content .social-icons i:hover {
+           
+            color: #F7931E;
+             
         }
         .image-content {
             flex: 1;
             position: relative;
         }
         .image-content img {
-            margin-top: -170px;
-            
-            margin-left: -8px;
+            margin-top: -160px;    
+            /* margin-left: -10px;     */
             width: 300px;
-            height: 307px;
-            
-          
-             
+            height: 307px;    
         }
-        .image-content .small-image {
+        .image-content .small-image  {
+            margin-left: 50px;
+            /* position: absolute;
+            width: 80px;
+            height: 80px;
+            bottom: 20px;
+            overflow: hidden;
+            border-radius: 50%;    */
+        }
+        .image-content .small-image img{
             position: absolute;
             width: 80px;
             height: 80px;
             bottom: 20px;
             overflow: hidden;
-            border-radius: 50%;
-           
-       
-            
+            border-radius: 50%; 
         }
         .footer {
-            margin-top: -40px; 
+            margin-top: -50px;  
+                    
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
         .footer .join-now {
+            margin-left: 20px;    
             font-size: 8px;
             color: #ffffff;
           
@@ -109,15 +118,26 @@ body, html {
         }
         .footer .join-now .btn{
             font-size: 8px;
+            padding: 5px;
+            border-radius: 5%;
+            background-color: #fff;
+            text-decoration: none;
+            color: #0e202e;
+
 
         }
         .footer .contact-info {
             color: #fff;
             font-size: 8px;
+            margin-right: 20px;
+            margin-top: 20px;
+            
         }
         .footer .contact-info i {
             margin-left: 10px;
         }
+
+        
        
     </style>
 </head>
@@ -138,23 +158,22 @@ body, html {
                 </div>
             </div>
             <div class="image-content">
-                <img id="main-image" alt="Main image of a globe with flowers" src="banner-ima-1.png"/>
+                <img id="main-image" alt="Main image of a globe with flowers" src="https://github.com/jaganarasu/tagtask/blob/main/banner/banner-ima-1.png?raw=true"/>
                 <div class="small-image">
-                    <img id="second-image" alt="Small image of a black globe with lights in the background" src="ima-2.png"/>
+                    <img id="second-image" alt="Small image of a black globe with lights in the background" src="https://github.com/jaganarasu/tagtask/blob/main/banner/ima-2.png?raw=true"/>
                 </div>
             </div>
         </div>
         <div class="footer">
             <div class="join-now">
-                <p>JOIN NOW</p>
-                <a class="btn" href="#">JOIN NOW</a>
+                <p style="text-align: center;">JOIN NOW</p>
+                <a class="btn" href="#">www.tagww.com</a>
             </div>
            
             <div class="contact-info">
-                <p>FOR DELIVERY </p>
-                <p>012-3456-789 </p>
+                <img id=" " alt="phone" src="./icon-phone1.png"/>
                 
-                <i class="fas fa-phone"></i>
+                
             </div>
         </div>
     </div>
